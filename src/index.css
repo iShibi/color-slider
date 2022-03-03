@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--dynamic-color: rgb(0, 0, 0);
+}
+
+.bg-dynamic {
+	background-color: var(--dynamic-color);
+}

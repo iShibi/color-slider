@@ -1,0 +1,37 @@
+{
+	"name": "color-slider",
+	"description": "A color slider made with React + TailwindCSS + Redux Toolkit",
+	"private": true,
+	"author": {
+		"name": "Shubham Parihar",
+		"email": "shubhamparihar391@gmail.com",
+		"url": "https://github.com/iShibi"
+	},
+	"scripts": {
+		"dev": "vite --port 6969",
+		"dev:open": "vite --port 6969 --open",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"format:check": "prettier . --check",
+		"format:fix": "prettier . --write"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.8.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^7.2.6"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.33",
+		"@types/react-dom": "^17.0.10",
+		"@vitejs/plugin-react": "^1.0.7",
+		"autoprefixer": "^10.4.2",
+		"postcss": "^8.4.5",
+		"prettier": "^2.5.1",
+		"prettier-plugin-tailwindcss": "^0.1.3",
+		"tailwindcss": "^3.0.13",
+		"typescript": "^4.4.4",
+		"vite": "^2.7.2"
+	},
+	"license": "MIT"
+}
