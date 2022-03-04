@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Footer } from './components/Footer';
 import { Slider } from './components/Slider';
 import { useTypedSelector } from './store/Store';
 
@@ -10,15 +11,20 @@ export function App() {
 	}, [red, green, blue]);
 
 	return (
-		<>
-			<div className='bg-dynamic flex h-[50vh] items-center justify-center text-3xl text-white'>
-				rgb({red}, {green}, {blue})
-			</div>
-			<div className='my-10 flex flex-col space-y-10 md:mt-24 md:flex-row md:justify-evenly md:space-y-0'>
-				<Slider min={0} max={255} name='red' value={red} />
-				<Slider min={0} max={255} name='green' value={green} />
-				<Slider min={0} max={255} name='blue' value={blue} />
-			</div>
-		</>
+		<div className='flex min-h-screen flex-col justify-between'>
+			<main>
+				<div className='bg-dynamic mb-14 flex h-36 items-center justify-center text-3xl text-white'>
+					rgb({red}, {green}, {blue})
+				</div>
+				<div className='flex flex-col gap-y-14 md:flex-row md:justify-evenly'>
+					<Slider min={0} max={255} name='red' value={red} />
+					<Slider min={0} max={255} name='green' value={green} />
+					<Slider min={0} max={255} name='blue' value={blue} />
+				</div>
+			</main>
+			<footer className='flex items-center justify-center gap-x-10 border-t border-gray-900 border-opacity-5 p-4 text-white'>
+				<Footer />
+			</footer>
+		</div>
 	);
 }
